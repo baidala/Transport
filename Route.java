@@ -26,10 +26,10 @@ public class Route {
     @Column (name="NUMBER", unique=false, nullable=false)
     private int number;
     
-    @Column (name="FROM_POINT", unique=false, length=50)
+    @Column (name="FROMPOINT", unique=false, length=50)
     private String fromPoint;
     
-    @Column (name="TO_POINT", unique=false, length=50)
+    @Column (name="TOPOINT", unique=false, length=50)
     private String toPoint;
     
     @Column (name="PRICE", unique=false, nullable=false)
@@ -41,6 +41,22 @@ public class Route {
     }
     
     public void set() {
+    }
+
+    void setNumber(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setFromPoint(String khreschatik) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setPrice(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setToPoint(String zulyany) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
