@@ -12,12 +12,12 @@ and open the template in the editor.
     <session-factory name="session1">
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://db4free.net:3306/feneror</property>
+        <property name="hibernate.connection.username">feneror</property>
+        <property name="hibernate.connection.password">feneror</property>
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.current_session_context_class">thread</property>
-        <property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</property>
+        
+        
         
         <mapping class="transport/Route"/>
     </session-factory>
