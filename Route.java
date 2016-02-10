@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package transport;
 
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Table;
 import javax.persistence.Entity;
@@ -18,7 +14,7 @@ import javax.persistence.Id;
 @Entity
 @Table (name="ROUTE")
 
-public class Route {
+public class Route implements Serializable {
     @Id
     @Column (name="ID", unique=true, nullable=false)
     private int id;
@@ -39,24 +35,41 @@ public class Route {
     public int getPrice() {
         return this.price;
     }
-    
-    public void set() {
+
+    public int getId() {
+        return id;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public String getFromPoint() {
+        return fromPoint;
+    }
+
+    public String getToPoint() {
+        return toPoint;
+    }
+    
+    
+
     void setNumber(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        number = i;
+        
     }
 
     void setFromPoint(String khreschatik) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        fromPoint = khreschatik;
+        
     }
 
     void setPrice(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        price = i;
     }
 
     void setToPoint(String zulyany) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        toPoint = zulyany;
     }
     
     
