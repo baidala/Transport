@@ -9,7 +9,7 @@ and open the template in the editor.
 "http://hibernate-sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory name="session1">
+    <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://db4free.net:3306/feneror</property>
@@ -19,8 +19,6 @@ and open the template in the editor.
         
         
         
-        <mapping class="transport/Route"/>
+        <mapping class="transport.Route"/>
     </session-factory>
 </hibernate-configuration>
-
-
